@@ -26,8 +26,8 @@ Follow these steps to build and run the project:
 
 1. **Clone the Repository** (if you haven't already):
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/RizwanNiazi/CalculatorProject.git
+    cd CalculatorProject
     ```
 
 2. **Make the Build Script Executable**:
@@ -37,6 +37,7 @@ Follow these steps to build and run the project:
 
 3. **Execute the Build Script**:
     ```bash
+    rm -rf build
     ./build_and_run.sh
     ```
 
@@ -53,47 +54,26 @@ After executing the `build_and_run.sh` script, the calculator program will run. 
 The `build_and_run.sh` script also runs the tests automatically. However, you can run them manually by executing the following command from the `build` directory:
 ```bash
 ./tests
+```
 
-# Project Structure
+### Project Structure
 
-    include/Calculator.h: Header file for the Calculator class.
-    src/Calculator.cpp: Implementation of the Calculator class.
-    src/Main.cpp: Command-line interface for the calculator.
-    tests/test_Calculator.cpp: Unit tests for the Calculator class.
-    CMakeLists.txt: CMake configuration for building the project.
-    build_and_run.sh: Bash script to automate the build and run process.
-    README.md: Documentation and instructions.
+    `include/Calculator.h`: Header file for the Calculator class.
+    `src/Calculator.cpp`: Implementation of the Calculator class.
+    `src/Main.cpp`: Command-line interface for the calculator.
+    `tests/test_Calculator.cpp`: Unit tests for the Calculator class.
+    `CMakeLists.txt`: CMake configuration for building the project.
+    `build_and_run.sh`: Bash script to automate the build and run process.
+    `README.md`: Documentation and instructions.
 
 # External Dependencies
 
 The project uses Google Test for unit testing. CMake will automatically download and build Google Test during the build process.
 License
 
+# License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 Acknowledgements
 
     Google Test: Google Test GitHub
-
-
-### Instructions
-
-1. **Organize Your Files**: Create the directory structure as outlined above, and place each file in its respective directory.
-2. **Initialize the Project**:
-    ```bash
-    mkdir CalculatorProject
-    cd CalculatorProject
-    mkdir build include src tests
-    ```
-    Add the files to their respective directories.
-
-3. **Make the Script Executable**:
-    ```bash
-    chmod +x build_and_run.sh
-    ```
-
-4. **Run the Build Script**:
-    ```bash
-    ./build_and_run.sh
-    ```
-
-Following these steps and using this structure will help maintain a clean and manageable project. If you have any further questions or need additional adjustments, feel free to ask!

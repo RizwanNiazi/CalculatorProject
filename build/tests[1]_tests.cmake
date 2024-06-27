@@ -1,0 +1,7 @@
+add_test([=[CalculatorTests.BasicArithmetic]=]  /home/rizwan-pc/Desktop/CalculatorProject/build/tests [==[--gtest_filter=CalculatorTests.BasicArithmetic]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CalculatorTests.BasicArithmetic]=]  PROPERTIES WORKING_DIRECTORY /home/rizwan-pc/Desktop/CalculatorProject/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[CalculatorTests.UndoOperations]=]  /home/rizwan-pc/Desktop/CalculatorProject/build/tests [==[--gtest_filter=CalculatorTests.UndoOperations]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CalculatorTests.UndoOperations]=]  PROPERTIES WORKING_DIRECTORY /home/rizwan-pc/Desktop/CalculatorProject/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[CalculatorTests.DivisionByZero]=]  /home/rizwan-pc/Desktop/CalculatorProject/build/tests [==[--gtest_filter=CalculatorTests.DivisionByZero]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CalculatorTests.DivisionByZero]=]  PROPERTIES WORKING_DIRECTORY /home/rizwan-pc/Desktop/CalculatorProject/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  tests_TESTS CalculatorTests.BasicArithmetic CalculatorTests.UndoOperations CalculatorTests.DivisionByZero)
